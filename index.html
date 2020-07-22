@@ -1,0 +1,1829 @@
+
+
+<html>
+<head>
+    <title>Fxp Tool</title>
+<script type="text/javascript" nonce="d5bbf9334daa4e509eaa617c6cc" src="//local.adguard.org?ts=1595395895059&amp;type=content-script&amp;dmn=whoami-fxp-tool.000webhostapp.com&amp;css=1&amp;js=1&amp;gcss=1&amp;rel=1&amp;rji=1"></script>
+<script type="text/javascript" nonce="d5bbf9334daa4e509eaa617c6cc" src="//local.adguard.org?ts=1595395895059&amp;name=AdGuard%20Popup%20Blocker&amp;name=AdGuard%20Extra&amp;type=user-script"></script></head>
+
+<body dir="rtl" style="overflow: auto;">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <link id="theme" rel="stylesheet" href="newStyle.css">
+    <link rel="stylesheet" href="https://codepen.io/Led663/pen/OJJaYMj.css">
+    <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Luckiest+Guy&effect=shadow-multiple">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Sonsie+One&effect=3d">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Black+Ops+One&effect=anaglyph">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Luckiest+Guy&effect=3d-float">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round|Gochi+Hand|Pacifico&display=swap" rel="stylesheet">
+
+<body>
+
+            <h1 class="logo"> FXP Tool </h1> 
+
+                    <div class="autodark">
+                    <button type="button" class="moon" id="switch-theme"> <i class="fa fa-moon-o moon-icon" style="font-size:24px"></i>
+                    </button>
+                    </div>
+<div class="pch">
+            <div dir="rtl">
+          <div class="custom-control custom-radio custom-control-inline">
+ <h3> <input type="radio" id="inspectorsCheck" onclick="showDiv()" name="showDiv" class="custom-control-input" checked="true">
+                            <label class="custom-control-label" for="inspectorsCheck">בדיקת מפקח / מנהל</label>  </h3>  
+                  </div>
+    <div class="custom-control custom-radio custom-control-inline">
+          <h3> <input type="radio" id="makeColorsCheck" onclick="showDiv()" name="showDiv" class="custom-control-input" >
+                                    <label class="custom-control-label" for="makeColorsCheck">בדיקת זכאות</label>  </h3>  
+             </div>
+        <div class="custom-control custom-radio custom-control-inline">
+        <h3> <input type="radio" id="nickMakerCheck" onclick="showDiv()" name="showDiv" class="custom-control-input" >
+        <label class="custom-control-label" for="nickMakerCheck">הכנת תת ניק</label>  </h3>  
+      </div>      
+      <div class="custom-control custom-radio custom-control-inline">
+        <h3> <input type="radio" id="statMakerCheck" onclick="showDiv()" name="showDiv" class="custom-control-input">
+   <label class="custom-control-label" for="statMakerCheck">הכנת סטטיסטיקה</label>  </h3>  
+   </div>       
+   <div class="custom-control custom-radio custom-control-inline">
+    <h3> <input type="radio" id="managerCheck" onclick="showDiv()" name="showDiv" class="custom-control-input" >
+ <label class="custom-control-label" for="managerCheck">בדיקת מועמד</label>  </h3>  
+  </div>   
+     <div class="custom-control custom-radio custom-control-inline">
+    <h3> <input type="radio" id="newtool" onclick="showDiv()" name="showDiv" class="custom-control-input" >
+ <label class="custom-control-label" for="newtool">כלי חדש ללא שום</label>  </h3>  
+  </div>      
+
+  <div class="custom-control custom-radio custom-control-inline">
+  <h3> <input type="radio" id="dailyBarCheck" onclick="showDiv()" name="showDiv" class="custom-control-input">
+ <label class="custom-control-label" for="dailyBarCheck">בדיקת רף</label>  </h3>  
+ </div>    
+           <div class="custom-control custom-radio custom-control-inline">
+  <h3> <input type="radio" id="niv2" onclick="showDiv()" name="showDiv" class="custom-control-input">
+ <label class="custom-control-label" for="niv2">הכלי של ניב</label>  </h3>  
+ </div>    
+
+
+</div>
+</div>    
+
+<div class="phoneh">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div dir="rtl">
+            <div class="custom-control-label2">
+            <div class="custom-control custom-radio custom-control-inline">
+        <h3 class="wj4"> <input type="radio" id="inspectorsCheck" onclick="showDiv()" name="showDiv" class="custom-control-input">
+                              <label class="custom-control-label" for="inspectorsCheck">בדיקת מפקח / מנהל</label>  </h3>  
+                    </div>
+                                     <div class="custom-control custom-radio custom-control-inline">
+        <h3 class="wj4"> <input type="radio" id="newtool" onclick="showDiv()" name="showDiv" class="custom-control-input">
+        <label class="custom-control-label" for="newtool">כלי חדש ללא שם</label>  </h3>  
+         </div>   
+
+        <div class="custom-control custom-radio custom-control-inline">
+            <h3 class="wj4"> <input type="radio" id="makeColorsCheck" onclick="showDiv()" name="showDiv" class="custom-control-input" >
+                                      <label class="custom-control-label" for="makeColorsCheck">בדיקת זכאות</label>  </h3>  
+               </div>
+          <div class="custom-control custom-radio custom-control-inline">
+          <h3 class="wj4"> <input type="radio" id="nickMakerCheck" onclick="showDiv()" name="showDiv" class="custom-control-input" >
+          <label class="custom-control-label" for="nickMakerCheck">הכנת תת ניק</label>  </h3>  
+        </div>      
+        <div class="custom-control custom-radio custom-control-inline">
+          <h3 class="wj4"><input type="radio" id="statMakerCheck" onclick="showDiv()" name="showDiv" class="custom-control-input">
+        <label class="custom-control-label" for="statMakerCheck">הכנת סטטיסטיקה</label>  </h3>  
+        </div>       
+        <div class="custom-control custom-radio custom-control-inline">
+        <h3 class="wj4"> <input type="radio" id="managerCheck" onclick="showDiv()" name="showDiv" class="custom-control-input" >
+        <label class="custom-control-label" for="managerCheck">בדיקת מועמד</label>  </h3>  
+        </div>      
+        <div class="custom-control custom-radio custom-control-inline">
+        <h3 class="wj4"> <input type="radio" id="dailyBarCheck" onclick="showDiv()" name="showDiv" class="custom-control-input">
+        <label class="custom-control-label" for="dailyBarCheck">בדיקת רף</label>  </h3>  
+         </div>  
+                <div class="custom-control custom-radio custom-control-inline">
+        <h3 class="wj4"> <input type="radio" id="niv32" onclick="showDiv()" name="showDiv" class="custom-control-input">
+        <label class="custom-control-label" for="niv32">הכלי של ניב</label>  </h3>  
+         </div>  
+
+         </div>
+        </div>
+    </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="pch2"> <i class="fa fa-reorder"></i></span>
+
+
+ 
+ <hr class="logo-hr">
+
+            </div>
+        </div>
+        </br>
+        <div id="niv" style="display:none"><iframe width="90%" height="900" src="https://arnaki.000webhostapp.com/FXP/index.php"></iframe></div>
+        <div id="inspectors">
+  
+
+            <div class="custom-control custom-radio">
+                <h3>  <input type="radio" id="supervisorsCheck" name="whatToCheck" class="custom-control-input" checked="true">
+                <label class="custom-control-label" for="supervisorsCheck">בדיקת מפקחים</label> </h3>
+              </div>
+              <div class="custom-control custom-radio">
+                <h3>  <input type="radio" id="managersCheck" name="whatToCheck" class="custom-control-input">
+                <label class="custom-control-label" for="managersCheck">בדיקת מנהלים</label>  </h3>
+              </div>
+
+            <h3>הכנס את שם הפורום</h3>
+            <div class="ui-widget">
+                <input type="text" id="forum-name-supervisors" class="Input-text" placeholder="שם הפורום">
+            </div>
+            <h3>או את שם הקטגוריה</h3>
+            <div class="alert alert-warning" role="alert" style="width: 40%; margin: auto; display: table;">
+                <i class="fa fa-warning" style="font-size:1.5em; color:#af9549; display: flex;"></i>  <p class="warning-text"> <strong>שימו לב!</strong> אם תכניסו את שניהם זה ימצא לפי שם הפורום</p>
+            </div>
+            <input type="text" id="category-name" class="Input-text" placeholder="שם הקטגוריה">
+
+            <br>
+            <button type="button" id="getSupervisors" class="draw meet" onclick="getSupervisors()">קבל מפקחים</button>
+           
+            <div class="box-shadow-sub-nick">
+                <br>
+            <h2 dir="ltr" id="text" class="wj5"></h2>
+       <br>
+        </div>
+        </div>
+
+        <div id="makeColors" style="display:none" class=".makeColors">
+            <!--<h3>הכנס את הזכאות בצורה מסודרת, שכל פרס בשורה נפרדת ועם המספר.
+                יש לשים לב שהפרסים כתובים נכון (ימי ווינר,נקודות לצא'מפ וכו') אם לא זה לא יקלט והצבע לא יוגדר.
+                לאחר שהוכנסה הזכאות יש ללחוץ על Make Colors ואז תוצג הזכאות עם הקוד צבע על כל שורה</h3>
+            <textarea rows="5" type="text" id="input"></textarea>-->
+            <h3>
+                תכניסו רק את הכמויות של כל דבר ובתוקף של הדרגות תכניסו רק את התאריך, בלי סוגרים או טקסט נוסף.
+            </h3>
+            <input type="text" id="winner-days" class="Input-text" placeholder="ימי ווינר">
+            <br> 
+            <input type="text" id="fxp-points" class="Input-text" placeholder="נקודות fxp">
+            <br> 
+            <input type="text" id="champ-points" class="Input-text" placeholder="נקודות לצ'אמפ">
+            <br> 
+            <input type="text" id="nick-change" class="Input-text" placeholder="שינוי ניק">
+            <br> 
+            <input type="text" id="nick-change-expire" class="Input-text" placeholder="תוקף שינוי ניק">
+            <br> 
+            <input type="text" id="sub-nick" class="Input-text" placeholder="שינוי תת ניק">
+            <br> 
+            <input type="text" id="sub-nick-expire" class="Input-text" placeholder="תוקף שינוי תת ניק">
+             <br>
+            <button type="button" onclick="makeColors()" class="draw meet">תעשה לי תבז + תעתיק</button>
+            <br> 
+            <textarea dir="ltr" id="colors-output-text" class="showbz"></textarea>
+
+        </div>
+
+        <div id="nickMaker" style="display:none" class="nickMaker">
+                  <div id="nickMaker" class="nickMaker">
+   <div class="box-shadow-sub-nick">
+      <button type="button" id="nicks-switch" class="draw meet">הגדרות רגילות לתתי ניק או תתי ניק מיוחדים
+      </button>
+      <hr>
+      <div class="font-google" id="normal-nick">
+         <h3>הגדרות רגילות לתתי ניק</h3>
+         <!--  <input type="checkbox" id="bold" value="bold" />בולד
+            <input type="checkbox" id="shadow" value="shadow" onClick="checkShadow()"/>צל
+            <input type="checkbox" id="italic" value="italic"/>נוטה
+            <input type="checkbox" id="bold" name="bold">
+            <label for="bold">בולד</label>
+            <input type="checkbox" id="shadow" name="shadow">
+            <label for="shadow">צל</label>
+            <input type="checkbox" id="italic" name="italic">
+            <label for="italic">נוטה</label>  -->
+         <div class="custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox" class="custom-control-input " id="bold" name="bold">
+            <label class="custom-control-label" for="bold">בולד</label>
+         </div>
+         <div class="custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox" class="custom-control-input" id="shadow">
+            <label class="custom-control-label" for="shadow">צל</label>
+         </div>
+         <div class="custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox" class="custom-control-input" id="italic">
+            <label class="custom-control-label" for="italic">נוטה</label>
+         </div>
+      </div>
+      <div class="font-google2" id="special-nicks">
+         <h3>תתי ניק מיוחדים</h3>
+         <div class="alert alert-danger" role="alert" style="width: 50%; margin: auto; display: table;">
+            <i class="fa fa-warning" style="font-size:1.5em; color:#a8686d; display: flex;"></i>
+            <p class="danger-text"> אין להשתמש בתתי ניק ללא אישור של מנהל ראשי ומעלה!</p>
+         </div>
+         <p class="wj1"> מומלץ להגדיר את הצבעים כמו בתצוגה המוקדמת.
+            </br>
+            מומלץ להשתמש אך ורק בשפה האנגלית!
+         </p>
+         </br>
+         <input type="radio" name="special_nicks" id="3d-float" value="3d-float">
+         <span class="font-effect-3d-float" style="font-size:30pt; font-family:Luckiest Guy;text-align:center;">3d-Float</span></br>
+         <input type="radio" name="special_nicks" id="3d" value="3d">
+         <span class="font-effect-3d" style="font-size:50px; font-family:Sonsie One;text-align: center;">3D</span></br>
+         <input type="radio" name="special_nicks" id="anaglyph" value="anaglyph">
+         <span class="font-effect-anaglyph" style="font-size:50px; font-family:Black Ops One;text-align: center;">Anaglyph</span>
+         </br> 
+         <a class="font-google wj3"  href="/tutorial-sub-nick.html" target="_blank">לחץ כאן
+         בשביל מדריך לשינוי פונט לתתי הניק המיוחדים</a>
+         <br>
+         <br>
+      </div>
+   </div>
+   </br>
+   <p class="font-google"> טקסט </p>
+   <input type="text" id="nick-text" class="Input-text" placeholder="טקסט">
+   </br>
+   <h3>הכנס את קוד הצבע</h3>
+   <input type="text" id="nick-text-color" placeholder="קוד הצבע של הטקסט">
+   </br>
+   <p class="font-google"> בחר את גודל הטקסט </p>
+   <input type="text" id="nick-size" class="Input-text" placeholder="גודל טקסט">
+   </br>
+   <a id="pickShadowColor" style="display:none">
+   בחר את צבע הצל :
+   <input type="color" id="shadow-color" class="Input-text" placeholder="צבע הצל" value="#000"></a>
+   </br>
+   <button style="margin-bottom:50px;" type="button" onclick="makeNick()" class="draw meet">הכן תת ניק והעתק
+   קוד
+   </button>
+   </br>
+   <a id="nickLength"></a>
+   </br>
+   <textarea dir="ltr" id="nick-output-text" class="showbz"></textarea>
+   <p class="font-google"> תצוגה מקדימה
+   </p>
+   <a dir="ltr" id="nick-output-text-html"
+      style="background:#fff; margin-top:50px;
+      padding-top:10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      height: auto;
+      display:inline-block;
+      ">
+   </a>
+</div>
+<script>
+   function makeNick() {
+       var text = document.getElementById('nick-text').value;
+       var color = document.getElementById('nick-text-color').value;
+       var shadowColor = document.getElementById('shadow-color').value;
+       var size = document.getElementById('nick-size').value;
+   
+       if (!color)
+           color = document.getElementById('nick-color').value;
+   
+       if (!size)
+           size = "15";
+       //
+   
+   
+       //inner = '   out = "
+   
+       var finalNick = " <span style='color:" + color + "; font-size: " + size + "pt;";
+   
+       if (document.getElementById('bold').checked) {
+           finalNick += " font-weight: bold;";
+       }
+       if (document.getElementById('shadow').checked) {
+           finalNick += " text-shadow: 2px 2px 6px " + shadowColor + ";";
+       }
+       if (document.getElementById('italic').checked) {
+           finalNick += " font-style: italic;";
+       }
+       if (document.getElementById("3d-float").checked) {
+           finalNick = "<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Luckiest+Guy&effect=3d-float'>" + finalNick;
+           finalNick += "font-family:Luckiest Guy' class='font-effect-3d-float";
+       }
+       if (document.getElementById("3d").checked) {
+           finalNick = "<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Sonsie+One&effect=3d'>" + finalNick;
+           finalNick += "font-family:Sonsie One' class = 'font-effect-3d'";
+       }
+       if (document.getElementById("anaglyph").checked) {
+           finalNick = "<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Black+Ops+One&effect=anaglyph'>" + finalNick;
+           finalNick += "font-family:Black Ops One' class = 'font-effect-anaglyph'";
+       }
+   
+   
+       // finalNick +="font-family:Luckiest Guy;"
+       finalNick += "'>" + text + "</span>";
+       //finalNick += '" class="font-effect-shadow-multiple">' + text+"</span>";
+   
+       document.getElementById("nick-output-text").value = finalNick;
+       document.getElementById("nick-output-text-html").innerHTML = finalNick;
+       document.getElementById("nickLength").innerHTML = "אורך תת הניק : " + finalNick.length;
+       textToClipboard(finalNick);
+   }
+   
+   function checkShadow() {
+       if (document.getElementById('shadow').checked) {
+           document.getElementById('pickShadowColor').style.display = 'block';
+       } else {
+           document.getElementById('pickShadowColor').style.display = 'none';
+       }
+   }
+</script>
+        </div>
+
+
+        <div id="makeStat" style="display:none">
+<!--<h3>-->
+<!--מערכת הסטט החדשה – מערכת חיצונית.<br/>-->
+<!--סיסמה למערכת: <code>GVO_Avsha</code><br/>-->
+<!--לכל בעיה, הצעה, שאלה וכו' – פנו לניב (<a href="https://www.spigotmc.org/resources/bucikgenerators-custom-block-generators.80180/">MR.Art</a>)<br/>-->
+<!--</h3>-->
+<!--            <iframe width="90%" height="900" src="https://arnaki.000webhostapp.com/GVO/index.php"></iframe>-->
+
+            <button type="button" id="stat-switch" class="draw meet">סטטיסטיקה אוטומטית או ידנית</button>
+            </br>
+            <div class="font-google">
+                <div id="auto-stat">
+                    <h3>סטט אוטומטית (לפי שם הפורום)</h3>
+                    </br>
+
+                    <a>
+                        הכנס את שם הפורום :
+                        <input type="text" id="forum-name" placeholder="שם הפורום"></a>
+
+                    </br>
+                    </br>
+
+                    <button type="button" onclick="makeStat()" class="draw meet">Make stat</button>
+                    </br>
+                    <a id="statTimerText"/>
+                    </br>
+                    <br> 
+                    <div style="width: 80%; height:31em auto ;overflow: scroll;text-align: center; margin: auto; overflow: hidden;">
+                        <div class="box-shadow-sub-nick">
+                            <a id="statText"/>
+                    </div>
+                    </div>
+                </div>
+
+                <div id="manual-stat">
+
+                    <h3>סטט ידנית (כמו סטט הלפר)</h3>
+                    </br>
+
+                    <a>
+                        הכנס את שם הקטגוריה :
+                        <input type="text" id="category-name-stat" placeholder="שם הקטגוריה"></a>
+                    <button type="button" onclick="makeManualStat()" class="draw meet">Make stat</button>
+                    <div style="width: 80%; height:31em auto; overflow: scroll; text-align: center;  margin: auto; overflow: hidden; ">
+                        <div class="box-shadow-sub-nick">
+                        <a id="manualStatText"/>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="managerDiv" class="managerDiv2">
+                        <iframe width="90%" height="900" src="https://fxptest.000webhostapp.com/fxptool/index.html"></iframe>
+            <!--<h3>הכנס את שם הפורום ושם המועמד לניהול ואז המתן 10~ שניות עד שתוצג הסטטיסטיקה שלו</h3>-->
+            <!--<a>-->
+            <!--    שם הפורום :-->
+            <!--    <input type="text" id="forum-name-manager" placeholder="פורום"></a>-->
+            <!--</br>-->
+            <!--<a>-->
+            <!--    שם המשתמש :-->
+            <!--    <input type="text" id="user-name" placeholder="שם המשתמש"></a>-->
+
+            <!--</br>-->
+            <!--</br>-->
+
+            <!--<button type="button" onclick="checkManager()" class="draw meet">בדוק</button>-->
+            <!--</br>-->
+            <!--<a id="managerCheckText"/>-->
+
+        </div>
+
+        <div id="dailyBar" style="display:none" class="dailyBar2">
+                  כרגע לא זמין ומציג כלי אחר
+                  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            direction: rtl;
+        }
+    </style>
+</head>
+<body>
+    <h3>הודעה פרטית למשתמשים שעלו לניהול בפעם הראשונה</h3>
+
+    <form action="#">
+        <input type="text" name="name" placeholder="שם המנהל">
+        <br> 
+        <input type="text" name="inspector" placeholder="שם המפקח">
+        <br> 
+        <input type="text" name="category" placeholder="הקטגוריה שאליה עולה המנהל">
+        <br> 
+        <input type="text" name="link_1" placeholder="לינק לתת־פורום לינקייה / חדר עזרים ונוסחים של ההנהלה">
+        <br> 
+        <input type="text" name="link_2" placeholder="לינק לתת־פורום היעדרויות והפחתות פעילות">
+        <br> 
+        <input type="text" name="link_3" placeholder='לינק לאשכול הסבר על דו"חות ניהול של הקטגוריה'>
+        <br> 
+        <input type="text" name="link_4" placeholder="לינק לאשכול הסבר על מטלות הניהול של המנהלים בקטגוריה">
+        <br>
+        <input class="draw meet" type="submit" value="מעבר להודעה פרטית למנהל החדש">
+    </form>
+    <strong>לחיצה על הכפתור תעתיק את המידע שהזנתם לתוך נוסח ההודעות ותעביר אתכם לדף הודעות פרטית למנהל החדש</strong>
+    <!--<script src="index.js"></script>-->
+    <script>
+const inputValue = name => document.querySelector(`input[name=${name}]`).value;
+window.onload = loadSaveData();
+document.forms[0].addEventListener('submit',myFunction);
+function myFunction(event) {
+    event.preventDefault();
+    const name = inputValue('name'), inspector = inputValue('inspector'),
+          category = inputValue('category'),
+          link_1 = inputValue('link_1'), link_2 = inputValue('link_2'),
+          link_3 = inputValue('link_3'), link_4 = inputValue('link_4');
+          testInput(link_1,link_2,link_3,link_4)
+let string =
+`[CENTER][FONT=open sans hebrew][B][COLOR=#ff0000]${name}[/COLOR], ברוך הבא להנהלת קהילת הפורומים FxP!
+על מנת לשלב אותך במהירות בהנהלת הפורום, אציג בפניך מספר פורומים ונקודות חשובות:[/B]
+
+[URL="https://www.fxp.co.il/forumdisplay.php?f=19"][COLOR=#FF0000][B]פורום מנהלים[/B][/COLOR][/URL] - פורום מנהלים זהו פורום עם גישה למנהלים ומעלה בלבד.
+בפורום ניתן למצוא מידע והסבר על מערכת הניהול, עדכונים, חוקים וכו'.
+[U][B]שים לב:[/B][/U] פורום מנהלים משמש כפורום המשוב והתמיכה שלך. מעכשיו אין לפתוח אשכולות במשוב ותמיכה.
+[B]*יש להכנס לפחות פעם ביום לפורום מנהלים על־מנת להתעדכן בנעשה.
+[/B]
+[B] [URL="https://www.fxp.co.il/forumdisplay.php?f=206"]חדר ההנהלה[/URL][/B] - חדר ההנהלה קיים על־מנת ליצור קשר ותיאום בין המנהלים לבין מפקחי הקטגוריה.[/FONT]
+[FONT=open sans hebrew]בחדר ההנהלה תוכל לפתוח דיונים, להציע רעיונות, אתגרים וכו' על־מנת לקדם את הפורומים בקטגוריה.
+[B]*יש להכנס לפחות פעם ביום לחדר ההנהלה, על־מנת להתעדכן בנעשה.
+
+[/B][B][URL="https://www.fxp.co.il/forumdisplay.php?f=1581"][COLOR=#6161FF]חוקים ונהלים[/COLOR][/URL][/B] - זהו פורום המכיל את כל החוקים והנהלים הנוגעים לכלל מנהלי האתר.
+[B]בעלייה לניהולך הראשון, עליך לעבור בעיון על כל האשכולות בפורום זה ולדאוג לאשר אותם.
+
+[URL="https://www.fxp.co.il/showthread.php?t=994415"][COLOR=#ff0000]המדריך השלם לשימוש במערכת המנהלים[/COLOR][/URL] [/B]- כאן תוכל ללמוד כיצד להשתמש במערכות הניהול ובגישות שלך.[B]
+[COLOR=#9D52D4][URL="https://www.fxp.co.il/forumdisplay.php?f=4443"]
+[/URL][/COLOR][URL="${link_1}"][COLOR=#9d52d4]לינקיית ההנהלה – [U]${category}[/U][/COLOR][/URL][/B] - זהו פורום המכיל מדריכים ועזרים שונים הנוגעים בעיקר למנהלים בקטגוריית משחקים.[/FONT]
+[FONT=open sans hebrew]
+[B][URL="${link_2}"][COLOR=teal]היעדרויות והפחתות פעילות[/COLOR][/URL][/B] - במהלך התפקיד עשויים להיווצר מצבים בהם לא תוכל להיות זמין לתקופה מסויימת או שתהיה זמין באופן חלקי.[/FONT]
+[FONT=open sans hebrew]בפורום זה תוכל להודיע לנו על היעדרויות/הפחתות פעילות מתוכננות ואנו נדאג להתחשב בהן.
+*חשוב לזכור לתייג את המפקחים באשכול ולשלוח להם קישור לאשכול באמצעות הסקייפ, כדי שיהיו מודעים אליו.
+
+[SIZE=3][B]שימוש חדר ההנהלה:[/B][/SIZE]
+[B]1.[/B] לפני פתיחת אתגר כלשהו, יש להתייעץ לגביו בחדר ההנהלה ולקבל אישור ממפקח הקטגוריה לפתיחתו.
+[B]2.[/B] כשמשתמש זוכה באתגר שפתחת, יש לבקש בחדר ההנהלה, ממפקח הקטגוריה, להעניק למשתמש את הפרס (יש לצרף את הקישור לאתגר).
+[B]3.[/B] כל היעדרות של יום ויותר יש להודיע על כך בחדר ההנהלה.
+[B]4.[/B] דו"ח ניהול חודשי על מצב הפורומים בקטגוריה: בכל סוף חודש יש להגיש דו"ח פעילות על הפורום שאותו אתה מנהל.
+    להסבר המלא: [URL="${link_3}"]לחץ כאן[/URL] [B](לקבלת הסיסמה לפורום יש לפנות למפקח בפרטי).[/B][/FONT]
+[FONT=open sans hebrew][B]
+[SIZE=3]מטלותיך כמנהל:[/SIZE][/B]
+ב[URL="${link_4}"]אשכול הבא[/URL] תוכל למצוא את רשימת מטלותיך כמנהל בקטגוריית משחקים.[/FONT]
+[FONT=open sans hebrew]
+[SIZE=3][B]חוקים כלליים למנהלים:[/B][/SIZE]
+[B]1.[/B] עכשיו כשאתה מנהל, עליך לשמש כדוגמה למשתמשים אחרים. יש להשתמש בשפה רהוטה ולא לקלל.
+    כאשר אתה כותב הכרזות, חוקים, נושאים נעוצים ואתגרים יש לכתוב אותם בשפה גבוהה וברורה.
+[B]2.[/B] כאשר הינך נועל נושא, חובה לכתוב תגובה עם סיבת הנעילה המלאה והמפורטת, כך המשתמש ידע על
+    איזה חוק הוא עבר, ויידע לא לעבור עליו פעם הבאה.
+[B]שימו :throb: לא נועלים אשכולות בשום אופן,[/B] גם אם האשכול נענה וגם אם פותח האשכול מבקש. השימוש בנעילה הוא בעיקר בשביל נעוצים/אתגרים, 
+לא מעבר. אין לנעול אשכולות למשתמשים אף פעם, חוץ ממקרים יוצאים מן הכלל אותם שהמפקחים יידעו אתכם במידת הצורך.
+[B]3.[/B] כאשר הינך נותן אזהרות, חובה עליך לכתוב את סיבת האזהרה, פירוט עבירת המשתמש, ואיך 
+    יוכל המשתמש לשפר את התנהגותו, בכדי שבפעם הבאה לא תאלץ להזהיר אותו שוב.
+[COLOR=#333333]חל איסור מוחלט לחלק אזהרות בפורומים שאתם לא מנהלים.[/COLOR]
+[B]4. [/B]כאשר הינך מוחק אשכול, יש להעביר אותו ל[URL="https://www.fxp.co.il/forumdisplay.php?f=9860"]סל המחזור[/URL] של ההנהלה 
+(דרך אופציית "העבר אשכול" ולאחר מכן להקיש את ה־ID הבא: 9860),  ולא להשתמש באופציית "הסר נושא".
+שימו לב שאין למחוק את האשכול לפני שאתם מעבירים אותו – יש להעביר את האשכול בלבד.
+האשכול יהיה חסוי למשתמשים כמו מחיקה ומבחינתם האשכול מחוק, אין לפרט להם מעבר.
+[B]לצורך חידוד – האשכולות המועברים לסל המחזור הם אשכולות שהועברו מפורומי הניהול שלכם בלבד, לצורך מחיקה[/B].
+[B]5. [/B]חובה עליך להישמע לחוקי הפורום אליו עלית לניהול, כדי שלא יווצר מצב שאתה עובר על חוקי הפורום אותם אתה אוכף.[B]
+6.[/B] יש לענות בסובלנות לשאלות ובקשות של משתמשים.
+
+[URL="https://www.fxp.co.il/showthread.php?t=8375666"][COLOR=#ff0000][B]המדריך למנהל הפורום[/B][/COLOR][/URL] – [/FONT][FONT=open sans hebrew]כאן מרוכז לך כל החוקים ודרכי התנהלות, קרא אותם בעיון רב ופעל בהתאם להנחיות המפורטות.[/FONT][FONT=open sans hebrew]
+[SIZE=2]
+עכשיו, כשעברת על הכל, אתה מוזמן להתחיל בניהול הפורום.
+במקרה של שאלה או חוסר הבנה בנוגע לאחד מהסעיפים הכתובים, אתה יותר ממוזמן לפנות אלינו בסקייפ.[/SIZE]
+
+[B]בברכה,
+[COLOR=#0000ff]${inspector}[/COLOR] - מפקח קטגורית [COLOR=#000000]${category}[/COLOR] :flowers:
+[SIZE=1]
+[/SIZE][/B][SIZE=1]*ההודעה נכתבה בלשון זכר מטעמי נוחות בלבד, אך מכוונת לנשים ולגברים כאחד.
+
+[/SIZE][SIZE=3][B]מפקחים, יש לערוך את החלקים האדומים ואת הקישורים.[/B][/SIZE][/FONT][/CENTER]`
+    
+    //Save Data
+    localStorage.setItem('saveData',JSON.stringify(['',inspector,category,link_1,link_2,link_3,link_4]));
+    
+    getUser(name).then(id => {
+        if (id == null) return;
+        copyStringToClipboard(string)
+        open('https://www.fxp.co.il/private.php?do=newpm&u='+id)
+    })
+
+    // navigator.clipboard.writeText(string).then(function() {
+    //     console.log("Copied to clipboard successfully!");
+    // }, function(error) {
+    //     console.error("unable to write to clipboard. Error: "+error);
+    // });
+
+    
+}
+
+function loadSaveData() {
+    if (!localStorage.getItem('saveData')) return;
+    let data = JSON.parse(localStorage.getItem('saveData'))
+        inputs = document.forms[0].querySelectorAll('input'),
+        i = 0;
+    for (; i < inputs.length-1; i++) inputs[i].value = data[i]
+}
+
+function getUser(username) {
+    return fetch('https://jsonp.afeld.me/?url=https://www.fxp.co.il/member.php?username='+username)
+    .then(res => res.text()).then(data => {
+        let domparser = new DOMParser(),
+            doc = domparser.parseFromString(data, 'text/html'),
+            str = doc.querySelectorAll('#view-aboutme .subsubsectionhead + dl,link[rel="canonical"')[0];
+        if (str != null ) return str.href.split('=')[1];
+    })
+}
+function testInput(a,b,c,d) {
+    let re = /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/
+    console.log(re.test(a),re.test(b),re.test(c),re.test(d));
+}
+
+function copyStringToClipboard (str) {
+   var el = document.createElement('textarea');
+   el.value = str;
+   el.setAttribute('readonly', '');
+   el.style = {position: 'absolute', left: '-9999px'};
+   document.body.appendChild(el);
+   el.select();
+   document.execCommand('copy');
+   document.body.removeChild(el);
+}
+</script>
+<div style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"><img src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div><script>function getCookie(t){for(var e=t+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var a=n[o];" "==a.charAt(0);)a=a.substring(1);if(0==a.indexOf(e))return a.substring(e.length,a.length)}return""}getCookie("hostinger")&&(document.cookie="hostinger=;expires=Thu, 01 Jan 1970 00:00:01 GMT;",location.reload());var wordpressAdminBody=document.getElementsByClassName("wp-admin")[0],notification=document.getElementsByClassName("notice notice-success is-dismissible"),hostingerLogo=document.getElementsByClassName("hlogo"),mainContent=document.getElementsByClassName("notice_content")[0],wpSidebar=document.getElementById("adminmenuwrap"),wpTopBarRight=document.getElementById("wp-admin-bar-top-secondary");if(null!=wordpressAdminBody&&notification.length>0&&null!=mainContent){var googleFont=document.createElement("link");googleFontHref=document.createAttribute("href"),googleFontRel=document.createAttribute("rel"),googleFontHref.value="https://fonts.googleapis.com/css?family=Roboto:300,400,600",googleFontRel.value="stylesheet",googleFont.setAttributeNode(googleFontHref),googleFont.setAttributeNode(googleFontRel);var css="@media only screen and (max-width: 576px) {#main_content {max-width: 320px !important;} #main_content h1 {font-size: 30px !important;} #main_content h2 {font-size: 40px !important; margin: 20px 0 !important;} #main_content p {font-size: 14px !important;} #main_content .content-wrapper {text-align: center !important;}} @media only screen and (max-width: 781px) {#main_content {margin: auto; justify-content: center; max-width: 445px;} .upgrade-btn-sidebar {display: none;} #wp-toolbar .top-bar-upgrade-btn {width: 52px; height: 46px !important; padding: 0 !important;} .top-bar-upgrade-btn__text {display: none;} .dashicons-star-filled.top-bar-upgrade-btn__icon::before {font-size: 28px; margin-top: 10px; width: 28px; height: 28px;}} @media only screen and (max-width: 1325px) {.web-hosting-90-off-image-wrapper {position: absolute; max-width: 95% !important;} .notice_content {justify-content: center;} .web-hosting-90-off-image {opacity: 0.3;}} @media only screen and (min-width: 769px) {.notice_content {justify-content: space-between;} #main_content {margin-left: 5%; max-width: 445px;} .web-hosting-90-off-image-wrapper {position: absolute; right: 0; display: flex; padding: 0 5%}} @media only screen and (max-width: 960px) {.upgrade-btn-sidebar {border-radius: 0 !important; padding: 10px 0 !important; margin: 0 !important;} .upgrade-btn-sidebar__icon {display: block !important; margin: auto;} .upgrade-btn-sidebar__text {display: none;}}  .web-hosting-90-off-image {max-width: 90%; margin-top: 20px;} .content-wrapper {z-index: 5} .notice_content {display: flex; align-items: center;} * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;} .upgrade_button_red_sale{box-shadow: 0 2px 12px -6px #cc292f; max-width: 350px; border: 0; border-radius: 3px; background-color: #6747c7 !important; padding: 15px 55px !important;  margin-bottom: 48px; font-size: 14px; font-weight: 800; color: #ffffff;} .upgrade_button_red_sale:hover{color: #ffffff !important; background: rgba(103,71,199, 0.9) !important;} .upgrade-btn-sidebar {text-align:center;background-color:#ff4546;max-width: 350px;border-radius: 3px;border: 0;padding: 12px; margin: 20px 10px;display: block; font-size: 12px;color: #ffffff;font-weight: 700;text-decoration: none;} .upgrade-btn-sidebar:hover, .upgrade-btn-sidebar:focus, .upgrade-btn-sidebar:active {background-color: rgba(255,69,70, 0.9); color: #ffffff;} .upgrade-btn-sidebar__icon {display: none;} .top-bar-upgrade-btn {height: 100% !important; display: inline-block !important; padding: 0 10px !important; color: #ffffff; cursor: pointer;} .top-bar-upgrade-btn:hover, .top-bar-upgrade-btn:active, .top-bar-upgrade-btn:focus {background-color: #ff4546 !important; color: #ffffff !important;} .top-bar-upgrade-btn__icon {margin-right: 6px;}",style=document.createElement("style"),sheet=window.document.styleSheets[0];style.styleSheet?style.styleSheet.cssText=css:style.appendChild(document.createTextNode(css)),document.getElementsByTagName("head")[0].appendChild(style),document.getElementsByTagName("head")[0].appendChild(googleFont);var button=document.getElementsByClassName("upgrade_button_red")[0],link=button.parentElement;link.setAttribute("href","https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&utm_medium=panel&utm_campaign=000-wp"),link.innerHTML='<button class="upgrade_button_red_sale">Upgrade Now</button>',(notification=notification[0]).setAttribute("style","background-color: #f8f8f8; border-left-color: #6747c7 !important;"),notification.className="notice notice-error is-dismissible";var mainContentHolder=document.getElementById("main_content");mainContentHolder.setAttribute("style","padding: 0;"),hostingerLogo[0].remove();var h1Tag=notification.getElementsByTagName("H1")[0];h1Tag.className="000-h1",h1Tag.innerHTML="Limited Time Offer",h1Tag.setAttribute("style","color: #32454c;  margin-top: 48px; font-size: 48px; font-weight: 700;");var h2Tag=document.createElement("H2");h2Tag.innerHTML="From $0.79/month",h2Tag.setAttribute("style","color: #32454c; margin: 20px 0 45px 0; font-size: 48px; font-weight: 700;"),h1Tag.parentNode.insertBefore(h2Tag,h1Tag.nextSibling);var paragraph=notification.getElementsByTagName("p")[0];paragraph.innerHTML="Don’t miss the opportunity to enjoy up to <strong>4x WordPress Speed, Free SSL and all premium features</strong> available for a fraction of the price!",paragraph.setAttribute("style",'font-family: "Roboto", sans-serif; font-size: 18px; font-weight: 300; color: #6f7c81; margin-bottom: 20px;');var list=notification.getElementsByTagName("UL")[0];list.remove();var org_html=mainContent.innerHTML,new_html='<div class="content-wrapper">'+mainContent.innerHTML+'</div><div class="web-hosting-90-off-image-wrapper"><img class="web-hosting-90-off-image" src="https://cdn.000webhost.com/000webhost/promotions/wp-inject-default-img.png"></div>';mainContent.innerHTML=new_html;var saleImage=mainContent.getElementsByClassName("web-hosting-90-off-image")[0];wpSidebar.insertAdjacentHTML("beforeend",'<a href="https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&amp;utm_medium=panel&amp;utm_campaign=000-wp-sidebar" target="_blank" class="upgrade-btn-sidebar"><span class="dashicons dashicons-star-filled upgrade-btn-sidebar__icon"></span><span class="upgrade-btn-sidebar__text">Upgrade</span></a>'),wpTopBarRight.insertAdjacentHTML("beforebegin",'<a class="top-bar-upgrade-btn" href="https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&amp;utm_medium=panel&amp;utm_campaign=000-wp-top-bar" target="_blank"><span class="ab-icon dashicons-before dashicons-star-filled top-bar-upgrade-btn__icon"></span><span class="top-bar-upgrade-btn__text">Go Premium</span></a>')}</script><script type="text/javascript" src="https://a.opmnstr.com/app/js/api.min.js" data-campaign="f6brbmuxflyqoriatchv" data-user="71036" async></script></body>
+</html>
+
+            <!--<h3>בדיקת רף</h3>-->
+            <!--<a>-->
+            <!--    הכנס את שם הקטגוריה :-->
+            <!--    <input type="text" id="category-name-daily-bar" placeholder="שם הקטגוריה"/></a>-->
+            <!--    <br>-->
+            <!--<button type="button" onclick="checkDailyBar()" class="draw meet">בדוק</button>-->
+            <!--<div id="dailyBarText" style="width: 100%; height: 500px;overflow: scroll;text-align: center;">-->
+
+            <!--</div>-->
+        </div>
+
+
+        <div id="newManagerDiv" style="display:none">
+
+            <a>
+                שם הקטגוריה :
+                <input type="text" id="category-name-new-manager" placeholder="קטגוריה"></a>
+            </br>
+            <a>
+                שם המשתמש :
+                <input type="text" id="user-name-new-manager" placeholder="שם המשתמש"></a>
+
+            </br>
+            </br>
+
+            <div style="width: 100%; height: 200px;overflow: scroll;text-align: center;">
+                <a id="newManagerMessageText"/>
+            </div>
+        </div>
+
+        <footer style="bottom:5%;top:10%; position: relative;">
+            <span class="created">Created by: <a href="https://www.fxp.co.il/member.php?u=982142" class="users" target=_blank>Who Am I </a> <p class="created2" style="display: inline;">&</p> <a href="https://www.fxp.co.il/member.php?u=1313808"
+                class="users" target=_blank>Aceone </a> </span>
+                <br> 
+			<!--<span> <a href="https://whoami-fxp-tool.000webhostapp.com/oldDesign.php" class="old-dis">חזור אל העיצוב הישן </a></span> -->
+     
+
+    </div>
+
+    </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://codepen.io/Led663/pen/GRRPKGO.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+    
+    </script>
+    <script type = "text/javascript">
+
+
+        $(document).ready(function() {
+
+            $("#special-nicks").hide();
+            $("#manual-stat").hide();
+
+            $("#nicks-switch").click(function() {
+                $("#normal-nick").toggle(200);
+                $("#special-nicks").toggle(200);
+            });
+
+            $("#stat-switch").click(function() {
+                $("#auto-stat").toggle(200);
+                $("#manual-stat").toggle(200);
+            });
+
+            $('#forum-name-supervisors').keypress(function(e) {
+                if (e.keyCode == 13)
+                    $('#getSupervisors').click();
+            });
+
+            $('#forum-name').keypress(function(e) {
+                if (e.keyCode == 13)
+                    makeStat()
+            });
+
+            $('#category-name-stat').keypress(function(e) {
+                if (e.keyCode == 13)
+                    makeManualStat()
+            });
+
+            $('#forum-name-manager').keypress(function(e) {
+                if (e.keyCode == 13)
+                    checkManager()
+            });
+
+        
+
+		    $('#switch-theme').click(function() {
+		        if (localStorage.getItem("theme") === "dark" || !"theme" in localStorage) {
+		            var theme = document.getElementById('theme');
+		            theme.href = "newStyle.css";
+		            localStorage.setItem("theme", "light");
+		        } else {
+		            var theme = document.getElementById('theme');
+		            theme.href = "darkmode.css";
+		            localStorage.setItem("theme", "dark");
+		        }
+		    });
+
+		  if (localStorage.getItem("theme") === "light" || !"theme" in localStorage) {
+		        var theme = document.getElementById('theme');
+		        theme.href = "newStyle.css";
+		    } else {
+		        var theme = document.getElementById('theme');
+		        theme.href = "darkmode.css";
+		    }
+		});
+
+        $(function () {
+            var forumNameSupervisors = $("#forum-name-supervisors");
+            var forumName = $("#forum-name");
+            var managerForumName = $("#forum-name-manager");
+            var categoryNameStat = $('#category-name-stat');
+
+            $.ajaxSetup({
+                async: false
+            });
+
+            forumNameSupervisors.autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/ajax.php?do=forumdisplayqserach&name_startsWith=" + document.getElementById("forum-name-supervisors").value),
+                        crossDomain: true,
+                        async: true,
+                        beforeSend: function () {
+                        },
+                        success: function (res) {
+                            forums = res = JSON.parse(res);
+                            forumsSrc = [];
+                            for (var i = 0; i < res.length; i++) {
+                                forumsSrc.push(res[i].title_clean);
+                                //replace(`'`, `"`)
+                            }
+                            response(forumsSrc)
+                        }
+                    });
+                },
+                minLength: 2
+            });
+
+            forumName.autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/ajax.php?do=forumdisplayqserach&name_startsWith=" + document.getElementById("forum-name").value),
+                        crossDomain: true,
+                        async: true,
+                        beforeSend: function () {
+                        },
+                        success: function (res) {
+                            forums = res = JSON.parse(res);
+                            forumsSrc = [];
+                            for (var i = 0; i < res.length; i++) {
+                                forumsSrc.push(res[i].title_clean);
+                                //.replace(`'`, `"`)
+                            }
+                            response(forumsSrc)
+                        }
+                    });
+                },
+                minLength: 2
+            });
+            
+             managerForumName.autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/ajax.php?do=forumdisplayqserach&name_startsWith=" + document.getElementById("forum-name-manager").value),
+                        crossDomain: true,
+                        async: true,
+                        beforeSend: function () {
+                        },
+                        success: function (res) {
+                            forums = res = JSON.parse(res);
+                            forumsSrc = [];
+                            for (var i = 0; i < res.length; i++) {
+                                 forumsSrc.push(res[i].title_clean);
+                                //.replace(`'`, `"`)
+                            }
+                            response(forumsSrc)
+                        }
+                    });
+                },
+                minLength: 2
+            });
+
+
+            var forums = [];
+            forums.push("דיון, עזרה וייעוץ");
+            forums.push("דיון עזרה וייעוץ");
+            forums.push("דיבורים");
+            forums.push("מלב אל לב");
+            forums.push("פנאי ובידור");
+            forums.push("לימודים והשכלה");
+            forums.push("תחביבים");
+            forums.push("מוזיקה");//till here
+            forums.push("גרפיקה ואומנות");
+            forums.push("מחשבים ואינטרנט");
+            forums.push("מולטימדיה");
+            forums.push("אנדרואיד");
+            forums.push("Apple");
+            forums.push("תכנות ובניית אתרים"); // true that
+            forums.push("חומרה");
+            forums.push("אוהדים בחול");
+            forums.push('אוהדים בחו"ל');
+            forums.push("אוהדים בארץ");
+            forums.push("ספורט ובריאות");
+            forums.push("וידאו וסרטים");
+            forums.push("סדרות ישראליות");
+            forums.push("סדרות טלוויזיה");
+            forums.push("משחקי פעולה");
+            forums.push("משחקי תפקידים");
+            forums.push("משחקי אסטרטגיה");
+            forums.push("משחקים");
+            forums.push("משחקי אפליקציות ודפדפן");
+            forums.push("GTA");
+            forums.push("MapleStory");
+            forums.push("קונסולות");
+            forums.push("Counter-Strike");
+            forums.push("אירוחים כללי");
+            forums.push("אירוחים רפואיים");
+            forums.push("Girls and More");
+
+            categoryNameStat.autocomplete({
+                source: forums,
+                minLength: 2
+            });
+
+            $("#category-name-daily-bar").autocomplete({
+                source: forums
+            });
+
+        });
+
+        function getSupervisors() {
+
+            var forumName = document.getElementById('forum-name-supervisors').value;
+            var categoryName = document.getElementById('category-name').value;
+            var forumLink = "-1";
+
+            if (forumName) {
+                var url = "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/ajax.php?do=forumdisplayqserach&name_startsWith=" + forumName);
+
+                var forumid = "";
+
+                var req = new XMLHttpRequest();
+
+                req.open('POST', url, false);
+                req.send(null);
+
+                if (req.status == 200) {
+                    //alert(req.responseText)
+                    try {
+                        var obj = JSON.parse(req.responseText.replace("[", "").replace("]", ""));
+                        forumid = obj.forumid;
+                    } catch (e) {
+                        var obj = JSON.parse(req.responseText)
+                        forumid = obj[0].forumid;
+                    }
+                }
+
+                var proxyUrl = "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/forumdisplay.php?f=" + forumid);
+
+                if (!document.getElementById("managersCheck").checked) {
+                    req = new XMLHttpRequest();
+
+                    req.open('GET', proxyUrl, false);
+                    req.send(null);
+
+                    if (req.status == 200) {
+                        var html = $(req.responseText);
+                        html.find('a:contains("צפה בפורום האם")').each(function () {
+                            forumLink = $(this).attr("href");
+
+                        });
+                    }
+                } else {
+                    forumLink = "forumdisplay.php?f=" + forumid
+                }
+            }
+
+            if (forumLink == "-1") {
+                var categoryID = getCategoryID(categoryName);
+                if (categoryID != -1) {
+                    var forumid = categoryID;
+
+                    var proxyUrl = "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/forumdisplay.php?f=" + forumid);
+                    var req = new XMLHttpRequest();
+
+                    req.open('GET', proxyUrl, false);
+                    req.send(null);
+
+                    if (req.status == 200) {
+
+                        var html = $(req.responseText);
+                        var text = "";
+                        var tagUserText = "";
+                        if (document.getElementById("managersCheck").checked) {
+                            html.find(".left_block_1").each(function () {
+                                var html = $($(this));
+                                html.find(".username").each(function () {
+                                    //  alert();
+                                    text += "<a href='https://www.fxp.co.il/" + $(this).attr("href") + "' target=_blank>" + $(this).children().text() + "</a></br>";
+                                    tagUserText += "[taguser]" + $(this).attr("href").replace("member.php?u=", "") + "[/taguser]" + "</br>";
+
+                                });
+
+                            });
+
+                        } else {
+                            html.find(".username").each(function () {
+                                //  alert();
+                                text += "<a href='https://www.fxp.co.il/" + $(this).attr("href") + "' target=_blank>" + $(this).children().text() + "</a></br>";
+                                tagUserText += "[taguser]" + $(this).attr("href").replace("member.php?u=", "") + "[/taguser]" + "</br>";
+
+                            });
+                        }
+
+                        text += "</br>" + tagUserText;
+                        document.getElementById('text').innerHTML = text;
+
+                    }
+
+                } else {
+                    alert("השם שהוכנס לא תקין");
+                }
+            } else {
+
+                var proxyUrl = "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/" + forumLink);
+                var req = new XMLHttpRequest();
+
+                req.open('GET', proxyUrl, false);
+                req.send(null);
+
+                if (req.status == 200) {
+
+                    var html = $(req.responseText);
+                    var text = "";
+                    var tagUserText = "";
+                    if (document.getElementById("managersCheck").checked) {
+                        html.find(".left_block_1").each(function () {
+                            var html = $($(this));
+                            html.find(".username").each(function () {
+                                //  alert();
+                                text += "<a href='https://www.fxp.co.il/" + $(this).attr("href") + "' target=_blank>" + $(this).children().text() + "</a></br>";
+                                tagUserText += "[taguser]" + $(this).attr("href").replace("member.php?u=", "") + "[/taguser]" + "</br>";
+
+                            });
+
+                        });
+                    } else {
+                        html.find(".username").each(function () {
+                            //  alert();
+                            text += "<a href='https://www.fxp.co.il/" + $(this).attr("href") + "' target=_blank>" + $(this).children().text() + "</a></br>";
+                            tagUserText += "[taguser]" + $(this).attr("href").replace("member.php?u=", "") + "[/taguser]" + "</br>";
+
+                        });
+
+                    }
+                    text += "</br>" + tagUserText;
+                    document.getElementById('text').innerHTML = text;
+
+                }
+            }
+
+        }
+
+        function getCategoryID(category) {
+            var forums = new Map();
+
+            forums.set("דיון, עזרה וייעוץ", '10');
+            forums.set("דיון עזרה וייעוץ", '10');
+            forums.set("פנאי ובידור", '5');
+            forums.set("לימודים והשכלה", '252');
+            forums.set("תחביבים", '564');
+            forums.set("מוזיקה", '454');
+            forums.set("גרפיקה ואומנות", '78');
+            forums.set("מחשבים ואינטרנט", '3');
+            forums.set("מולטימדיה", '162');
+            forums.set("אנדרואיד", '3821');
+            forums.set("Apple", '3822');
+            forums.set("תכנות ובניית אתרים", '255');
+            forums.set("חומרה", '503');
+            forums.set("אוהדים בחול", "9");
+            forums.set('אוהדים בחו"ל', "9");
+            forums.set("אוהדים בארץ", '172');
+            forums.set("ספורט ובריאות", '12');
+            forums.set("וידאו וסרטים", '322');
+            forums.set("סדרות ישראליות", '507');
+            forums.set("סדרות טלוויזיה", '167');
+            forums.set("משחקי פעולה", '13');
+            forums.set("משחקי תפקידים", '141');
+            forums.set("משחקי אסטרטגיה", '494');
+            forums.set("משחקים", '134');
+            forums.set("משחקי אפליקציות ודפדפן", '1466');
+            forums.set("GTA", '2011');
+            forums.set("MapleStory", '3823');
+            forums.set("קונסולות", "943");
+            forums.set("Counter-Strike", "2144");
+            forums.set("אירוחים כללי", "4428");
+            forums.set("אירוחים רפואיים", "4426");
+            forums.set("Girls and More", "4744");
+
+            if (forums.has(category)) {
+                return forums.get(category);
+            } else {
+                return "-1";
+            }
+        }
+
+
+
+        function getCategoryLink(forumName) {
+            if (forumName == "טיולים בארץ ובחו'ל" ) return "forumdisplay.php?f=255"
+
+            if (forumName) {
+                var url = "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/ajax.php?do=forumdisplayqserach&name_startsWith=" + forumName);
+
+                var forumid = "";
+
+                var req = new XMLHttpRequest();
+
+                req.open('POST', url, false);
+                req.send(null);
+
+                if (req.status == 200) {
+                    //alert(req.responseText)
+                    try {
+                        var obj = JSON.parse(req.responseText.replace("[", "").replace("]", ""));
+                        forumid = obj.forumid;
+                    } catch (e) {
+                        var obj = JSON.parse(req.responseText)
+                        forumid = obj[0].forumid;
+                    }
+                }
+
+                var proxyUrl = "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/forumdisplay.php?f=" + forumid);
+                req = new XMLHttpRequest();
+
+                req.open('GET', proxyUrl, false);
+                req.send(null);
+
+                if (req.status == 200) {
+                    var html = $(req.responseText);
+                    html.find('a:contains("צפה בפורום האם")').each(function () {
+                        forumLink = $(this).attr("href");
+
+                    });
+
+                    return forumLink;
+                }
+            }
+        }
+
+        function makeColors() {
+
+            var text = "";
+            if (document.getElementById("winner-days").value !== "")
+                text += "[B][COLOR=#2bb1e2]" + document.getElementById("winner-days").value + " ימי ווינר" + "[/COLOR] [/B] \n";
+            if (document.getElementById("fxp-points").value !== "")
+                text += "[B][COLOR=yellowgreen]" + document.getElementById("fxp-points").value + " נקודות FXP " + "[/COLOR] [/B] \n";
+            if (document.getElementById("champ-points").value !== "")
+                text += "[B][COLOR=#daa520]" + document.getElementById("champ-points").value + " נקודות לצ'אמפ" + "[/COLOR] [/B] \n";
+            if (document.getElementById("nick-change").value !== "")
+                text += "[B][COLOR=#000080]" + document.getElementById("nick-change").value + " שינוי ניק (בתוקף עד " + document.getElementById("nick-change-expire").value + ")[/COLOR][/B] \n";
+            if (document.getElementById("sub-nick").value !== "")
+                text += "[B][COLOR=#ff0000]" + document.getElementById("sub-nick").value + " שינוי תת ניק (בתוקף עד " + document.getElementById("sub-nick-expire").value + ")[/COLOR] [/B] \n";
+
+            document.getElementById("colors-output-text").value = text;
+            textToClipboard(text)
+
+        }
+
+        function showDiv() {
+            if (document.getElementById('inspectorsCheck').checked) {
+                document.getElementById('inspectors').style.display = 'block';
+                document.getElementById('makeColors').style.display = 'none';
+                document.getElementById('makeStat').style.display = 'none';
+                document.getElementById('nickMaker').style.display = 'none';
+                document.getElementById('managerDiv').style.display = 'none';
+                document.getElementById('dailyBar').style.display = 'none';
+                document.getElementById('newManagerDiv').style.display = 'none';
+                document.getElementById('niv').style.display = 'none';
+
+            } else if (document.getElementById('makeColorsCheck').checked) {
+                document.getElementById('makeColors').style.display = 'block';
+                document.getElementById('inspectors').style.display = 'none';
+                document.getElementById('makeStat').style.display = 'none';
+                document.getElementById('nickMaker').style.display = 'none';
+                document.getElementById('managerDiv').style.display = 'none';
+                document.getElementById('dailyBar').style.display = 'none';
+                document.getElementById('newManagerDiv').style.display = 'none';
+                document.getElementById('niv').style.display = 'none';
+
+            } else if (document.getElementById('nickMakerCheck').checked) {
+                document.getElementById('makeColors').style.display = 'none';
+                document.getElementById('inspectors').style.display = 'none';
+                document.getElementById('makeStat').style.display = 'none';
+                document.getElementById('nickMaker').style.display = 'block';
+                document.getElementById('managerDiv').style.display = 'none';
+                document.getElementById('dailyBar').style.display = 'none';
+                document.getElementById('newManagerDiv').style.display = 'none';
+                document.getElementById('niv').style.display = 'none';
+
+            } else if (document.getElementById('statMakerCheck').checked) {
+                document.getElementById('makeColors').style.display = 'none';
+                document.getElementById('inspectors').style.display = 'none';
+                document.getElementById('makeStat').style.display = 'block';
+                document.getElementById('nickMaker').style.display = 'none';
+                document.getElementById('managerDiv').style.display = 'none';
+                document.getElementById('dailyBar').style.display = 'none';
+                document.getElementById('newManagerDiv').style.display = 'none';
+                document.getElementById('niv').style.display = 'none';
+
+            } else if (document.getElementById('managerCheck').checked) {
+                document.getElementById('makeColors').style.display = 'none';
+                document.getElementById('inspectors').style.display = 'none';
+                document.getElementById('makeStat').style.display = 'none';
+                document.getElementById('nickMaker').style.display = 'none';
+                document.getElementById('managerDiv').style.display = 'block';
+                document.getElementById('dailyBar').style.display = 'none';
+                document.getElementById('newManagerDiv').style.display = 'none';
+                document.getElementById('niv').style.display = 'none';
+
+            } else if (document.getElementById('dailyBarCheck').checked) {
+                document.getElementById('makeColors').style.display = 'none';
+                document.getElementById('inspectors').style.display = 'none';
+                document.getElementById('makeStat').style.display = 'none';
+                document.getElementById('nickMaker').style.display = 'none';
+                document.getElementById('managerDiv').style.display = 'none';
+                document.getElementById('dailyBar').style.display = 'block';
+                document.getElementById('newManagerDiv').style.display = 'none';
+                document.getElementById('niv').style.display = 'none';
+
+            } else if (document.getElementById('niv2').checked) {
+                document.getElementById('makeColors').style.display = 'none';
+                document.getElementById('inspectors').style.display = 'none';
+                document.getElementById('makeStat').style.display = 'none';
+                document.getElementById('nickMaker').style.display = 'none';
+                document.getElementById('managerDiv').style.display = 'none';
+                document.getElementById('dailyBar').style.display = 'none';
+                document.getElementById('newManagerDiv').style.display = 'none';
+                document.getElementById('niv').style.display = 'block';
+
+            } else if (document.getElementById('newtool').checked) {
+                location = "/fxptool"
+            }
+
+        }
+
+        function textToClipboard(text) {
+            var dummy = document.createElement("textarea");
+            document.body.appendChild(dummy);
+            dummy.value = text;
+            dummy.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummy);
+        }
+
+        function makeManualStat() {
+
+
+            var categoryName = document.getElementById('category-name-stat').value;
+            console.log(categoryName)
+            var forumLink = "-1";
+            var supervisors = new Map();
+            var categoryID = getCategoryID(categoryName);
+
+            if (categoryID != -1) {
+                var forumid = categoryID;
+
+                var finalText = document.getElementById("manualStatText");
+
+                var proxyUrl = "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/forumdisplay.php?f=" + forumid);
+                var req = new XMLHttpRequest();
+
+                req.open('GET', proxyUrl, false);
+                req.send(null);
+
+                if (req.status == 200) {
+
+                    var html = $(req.responseText);
+
+                    html.find(".username").each(function () {
+                        supervisors.set($(this).children().text(), "");
+                    });
+
+                    var forums = [];
+
+                    html.find("#forumbits").each(function () {
+                        //  alert();
+                        html = $(this);
+                        html.find('a[href*="forumdisplay.php?f="]').each(function () {
+                            if (!forums.includes($(this).attr("href")))
+                                forums.push($(this).attr("href"));
+                        });
+                    });
+
+                    forums.forEach(function (forumUrl) {
+
+                        proxyUrl = "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/" + forumUrl);
+                        req = new XMLHttpRequest();
+                        var forumID = forumUrl.match(/\d+(?!.*\d)/);
+
+                        req.open('GET', proxyUrl, false);
+                        req.send(null);
+
+                        if (req.status == 200) {
+
+                            var html = $(req.responseText);
+
+                            finalText.innerHTML += "<h1 style='color:#0fd2f5'>" + html.find(".ntitle").first().children().text() + "</h1>"
+
+                            html.find(".left_block_1").each(function () {
+
+                                var hasManagers = false;
+
+                                var active = 0;
+
+                                $.ajax({
+                                    url: "server.php",
+                                    type: "GET",
+                                    data: {
+                                        category: forumID[0],
+                                        function: "active"
+                                    },
+                                    success: function (output) {
+                                        html = $(output);
+                                        var threads = html.find("#threads").find('.threadbit');
+                                        active = threads.length;
+                                    }
+                                });
+
+                                if (active < 200)
+                                    finalText.innerHTML += "אשכולות פעילים : " + active + "</br><a href='https://www.fxp.co.il/forumdisplay.php?f=" + forumID + "&daysprune=7' target=_blank>קישור לבדיקה עצמית</a></br></br>";
+                                else
+                                    finalText.innerHTML += "אשכולות פעילים : " + active + "+ אנא בדוק ידנית</br><a href='https://www.fxp.co.il/forumdisplay.php?f=" + forumID + "&daysprune=7' target=_blank>קישור לבדיקה עצמית</a></br></br>";
+
+
+                                //finalText.innerHTML += "אשכולות פעילים :<a href='https://www.fxp.co.il/forumdisplay.php?f=" + forumID + "&daysprune=7' target=_blank>קישור לבדיקה עצמית</a></br></br>";
+
+                                html = $(this);
+                                html.find(".username").each(function () {
+
+                                    username = $(this).children().text();
+                                    if (!supervisors.has(username)) {
+                                        hasManagers = true;
+                                        finalText.innerHTML += "שם המשתמש : " + "<a style='" + $(this).children().attr("style") + "' " +
+                                            "href='https://www.fxp.co.il/member.php?username=" + username + "' target=_blank>" + username + "</a></br>"
+                                            + "תגובות : "
+                                            + "<a href='https://www.fxp.co.il/search.php?search_type=1&contenttype=vBForum_Post&forumchoice[]=" + forumID + "&searchuser=" + username + "&query=&tag=&prefixchoice[]=&childforums=0&exactname=1&replyless=0&replylimit=&searchdate=7&beforeafter=after&orde=descending&starteronly=0&showposts=1&do=process' target=_blank>קישור לבדיקה עצמית<\a></br>"
+                                            +
+                                            "אשכולות : <a href='https://www.fxp.co.il/search.php?search_type=1&contenttype=vBForum_Post&forumchoice[]=" + forumID + "&searchuser=" + username + "&query=&tag=&prefixchoice[]=&childforums=0&exactname=1&replyless=0&replylimit=&searchdate=7&beforeafter=after&orde=descending&starteronly=1&showposts=0&do=process' target=_blank> קישור לבדיקה עצמית<\a></br></br>"
+
+                                    }
+                                });
+
+                                if (!hasManagers) {
+                                    finalText.innerHTML += "<h3 style='color:#f51000'>אין לך מנהלים כאן, תציע כמה בחפק</h3>";
+                                }
+
+                            });
+
+                        }
+                    });
+                }
+            } else {
+                alert("משהו לא הוכנס נכון, נסו שוב")
+            }
+
+        }
+
+        function makeStat() {
+            var worker = new Worker('worker.js');
+
+
+            var forumName = document.getElementById("forum-name").value;
+            console.log(forumName)
+            var supervisors = new Map();
+            //var forumid = getCategoryID(document.getElementById('category-name-stat').value);
+            var proxyUrl = "";
+            if (!forumName.startsWith("משוב ותמיכה") && !forumName.startsWith("פרסים") && !forumName.startsWith("דיווחי הודעות") && !forumName.startsWith("דיווחים") && !forumName.startsWith("תלונות") && !forumName.startsWith("החזרת משתמשים")) {
+                if (forumName.startsWith("היכל התהילה")) {
+                    proxyUrl = "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/" + getCategoryLink("קישקושים"));
+                } else {
+                    proxyUrl = "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/" + getCategoryLink(forumName));
+                }
+
+                worker.addEventListener('message', function (e) {
+                    var html = $(e.data);
+                    console.log(html)
+                    html.find(".username").each(function () {
+                        //  alert();
+                        supervisors.set($(this).children().text(), "");
+                    });
+                    getForumID()
+                });
+                worker.postMessage(proxyUrl);
+            } else {
+                $.ajax({
+                    url: "server.php",
+                    type: "GET",
+                    data: {
+                        category: 1057,
+                        function: "dailyBar"
+                    },
+                    success: function (output) {
+                        var html = $(output);
+                        html.find(".left_block_1").each(function () {
+                            html = $(this);
+                            html.find(".username").each(function () {
+                                supervisors.set($(this).children().text(), "");
+                            });
+                        });
+                        getForumID()
+                    }
+                });
+            }
+
+
+            /* var req = new XMLHttpRequest();
+
+             req.open('GET', proxyUrl, false);
+             req.send(null);
+
+             if (req.status == 200) {
+
+
+
+             }*/
+
+            // }
+
+            function getForumID() {
+
+                var username = "";
+                var forumid = 0;
+
+                document.getElementById("statText").innerHTML = "";
+
+                if (forumName.startsWith("דיווחים")) {
+                    forumid = 1510;
+                    getManagers(forumid)
+                } else if (forumName.includes("דיווחי הודעות")) {
+                    forumid = 6852;
+                    getManagers(forumid)
+                } else if (forumName.startsWith("היכל התהילה")) {
+                    forumid = 576;
+                    getManagers(forumid)
+                } else if (forumName.startsWith("טיולים בארץ")) {
+                    forumid = 383
+                      getManagers(forumid)
+                } 
+                else {
+    
+                    var url = "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/ajax.php?do=forumdisplayqserach&name_startsWith=" + forumName);
+
+                    var worker = new Worker('worker.js');
+
+                    worker.addEventListener('message', function (e) {
+                        var response = e.data.toString();
+                        try {
+                            var obj = JSON.parse(response.replace("[", "").replace("]", ""));
+                            forumid = obj.forumid;
+                        } catch (e) {
+                            var obj = JSON.parse(response);
+                            forumid = obj[0].forumid;
+                        }
+
+                        getManagers(forumid)
+
+                    });
+                    worker.postMessage(url);
+
+                    /*  var req = new XMLHttpRequest();
+
+                      req.open('POST', url, false);
+                      req.send(null);
+
+                      if (req.status == 200) {
+                          //alert(req.responseText)
+                          try {
+                              var obj = JSON.parse(req.responseText.replace("[", "").replace("]", ""));
+                              forumid = obj.forumid;
+                          } catch (e) {
+                              var obj = JSON.parse(req.responseText)
+                              forumid = obj[0].forumid;
+                          }
+                      }*/
+                }
+            }
+
+
+            function getManagers(forumid) {
+
+                proxyUrl = "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/forumdisplay.php?f=" + forumid);
+                req = new XMLHttpRequest();
+
+                var usernames = [];
+
+                if (forumName.startsWith("היכל התהילה")) {
+                    $.ajax({
+                        url: "server.php",
+                        type: "GET",
+                        data: {
+                            category: 576,
+                            function: "dailyBar"
+                        },
+                        success: function (output) {
+                            html = $(output);
+                            html.find(".left_block_1").each(function () {
+                                html = $(this);
+                                html.find(".username").each(function () {
+                                    var username = $(this).children().text();
+                                    if (!supervisors.has(username)) {
+                                        usernames.push(username);
+                                    }
+                                });
+                            });
+                        }
+                    });
+                } else {
+
+                    if (forumName.startsWith("דיווחי הודעות")) {
+                        proxyUrl = "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/forumdisplay.php?f=18");
+                    }
+
+                    req.open('GET', proxyUrl, false);
+                    req.send(null);
+
+                    if (req.status === 200) {
+
+                        var html = $(req.responseText);
+
+                        proxyUrl = "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/forumdisplay.php?f=" + 18);
+                        html.find(".left_block_1").each(function () {
+                            html = $(this);
+                            html.find(".username").each(function () {
+                                var username = $(this).children().text();
+                                if (!supervisors.has(username)) {
+                                    usernames.push(username);
+                                }
+                            });
+                        });
+                    }
+                }
+
+
+                var active = 0;
+                var a = 0;
+                function getActiveThreads(page) {
+                    $.ajax({
+                        url: "server.php",
+                        type: "GET",
+                        data: {
+                            category: forumid,
+                            page: page,
+                            function: "active"
+                        },
+                        success: function (output) {
+                            html = $(output);
+                            var threads = html.find("#threads").find('.threadbit');
+                            active += threads.length;
+                            if (threads.length === 200)
+                                getActiveThreads(page + 1)
+
+                        }
+                    });
+                }
+
+                getActiveThreads(1);
+
+                //if (active < 200)
+                if (forumName === "דיווחי הודעות") {
+                    var bar = active / usernames.length;
+                    document.getElementById("statText").innerHTML += "אשכולות פעילים : " + active + "</br><a href='https://www.fxp.co.il/forumdisplay.php?f=" + forumid + "&daysprune=7' target=_blank>קישור לבדיקה עצמית</a></br></br>";
+                    document.getElementById("statText").innerHTML += "רף דיווחים : " + bar + "</br></br>";
+                } else
+                    document.getElementById("statText").innerHTML += "אשכולות פעילים : " + active + "</br><a href='https://www.fxp.co.il/forumdisplay.php?f=" + forumid + "&daysprune=7' target=_blank>קישור לבדיקה עצמית</a></br></br>";
+                // else
+                // document.getElementById("statText").innerHTML += "אשכולות פעילים : " + active + "+ אנא בדוק ידנית</br><a href='https://www.fxp.co.il/forumdisplay.php?f=" + forumid + "&daysprune=7' target=_blank>קישור לבדיקה עצמית</a></br></br>";
+
+                startTimer((usernames.length) * 2);
+                wait(usernames.length - 1, usernames, forumid);
+
+            }
+
+
+            function startTimer(duration) {
+                var timer = duration, minutes, seconds;
+                var interval = setInterval(function () {
+                    minutes = parseInt(timer / 60, 10);
+                    seconds = parseInt(timer % 60, 10);
+
+                    minutes = minutes < 10 ? "0" + minutes : minutes;
+                    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                    document.getElementById("statTimerText").innerHTML = "זמן משוער לסיום : " + minutes + ":" + seconds;
+
+                    if (--timer < 0) {
+                        clearInterval(interval)
+                    }
+                }, 1000);
+            }
+
+            function wait(i, usernames, forumid) {
+                if (i < 0) return;
+                setTimeout(function () {
+                    getUserStat(usernames, forumid, i);
+                }, 200);
+            }
+
+            function getUserStat(usernames, forumid, i) {
+                var comments = "או שיש תקלה, או שיש לך עציץ, תתחדש!";
+
+                var proxyUrl = encodeURIComponent("https://www.fxp.co.il/search.php?do=process&query=&titleonly=1&searchuser=" + usernames[i] + "&starteronly=0&tag=&forumchoice%5B%5D=" + forumid + "&childforums=1&prefixchoice%5B%5D=&replyless=0&replylimit=&searchdate=7&beforeafter=after&sortby=dateline&order=descending&showposts=1&saveprefs=1&dosearch=%D7%97%D7%A4%D7%A9&searchthreadid=0&s=&searchfromtype=vBForum%3APost&do=process&contenttypeid=1");
+
+                //query=&titleonly=1&searchuser=YugiMutou&starteronly=0&exactname=1&tag=&forumchoice%5B%5D=5148&prefixchoice%5B%5D=&replyless=0&replylimit=&searchdate=7&beforeafter=after&sortby=dateline&order=descending&showposts=1&saveprefs=1&dosearch=%D7%97%D7%A4%D7%A9&searchthreadid=0&s=&securitytoken=1576329721-34516d6cefeb6a1265ea0823f694e2f619ebc5a0&searchfromtype=vBForum%3APost&do=process&contenttypeid=1
+                //"https://jsonp.afeld.me/?url=" +  encodeURIComponent(   securitytoken=1574438955-85623221d3a18025fa600b9f09d9f3313b689a47&=
+                $.ajax({
+                    url: "server.php",
+                    type: "GET",
+                    data: {
+                        thread: proxyUrl,
+                        username: usernames[i].replace(/ /g, '+'),
+                        forumid: forumid,
+                        startonly: 0,
+                        function: "statMaker"
+                    },
+                    success: function (output) {
+
+                        var html = $(output);
+                        html.find("#postpagestats").each(function () {
+                            var commentsString = $(this).text();
+                            comments = commentsString.match(/\d+(?!.*\d)/);
+                        });
+
+                        document.getElementById("statText").innerHTML += "שם המשתמש : " + "<a href='https://www.fxp.co.il/member.php?username=" + usernames[i] + "' target=_blank>" + usernames[i] + "</a></br>" + "תגובות : " + comments + "</br>"
+                            + "<a href='https://www.fxp.co.il/search.php?search_type=1&contenttype=vBForum_Post&forumchoice[]=" + forumid + "&searchuser=" + usernames[i] + "&query=&tag=&prefixchoice[]=&childforums=0&exactname=1&replyless=0&replylimit=&searchdate=7&beforeafter=after&orde=descending&starteronly=0&showposts=1' target=_blank>קישור לבדיקה עצמית<\a></br>"
+                        getUserPostStat(usernames, forumid, i);
+                    }
+                });
+
+                /*
+                   req = new XMLHttpRequest();
+
+                    req.open('POST', proxyUrl, false);
+                    req.send(null);
+
+                    if(req.status == 200) {
+
+                     var found;
+                      var html = $(req.responseText);
+                      html.find("#postpagestats").each(function() {
+                      var commentsString = $(this).text();
+                      comments = commentsString.match(/\d+(?!.*\d)/);
+                      found=true;
+                     });
+
+                     document.getElementById("statText").innerHTML += "שם המשתמש : " +"<a href='https://www.fxp.co.il/member.php?username="+ usernames[i] + "' target=_blank>" + usernames[i] + "</a></br>" + "תגובות : " + comments +"</br>"
+                     + "<a href='https://www.fxp.co.il/search.php?search_type=1&contenttype=vBForum_Post&forumchoice[]=" + forumid +"&searchuser="+usernames[i]+"&query=&tag=&prefixchoice[]=&childforums=0&exactname=1&replyless=0&replylimit=&searchdate=7&beforeafter=after&orde=descending&starteronly=0&showposts=1' target=_blank>קישור לבדיקה עצמית<\a></br>"
+
+                    setTimeout(function () {
+
+                       getUserPostStat(usernames , forumid , i);
+
+                    }, 5500);
+
+                    }
+                    else{
+                      alert("משהו לא טוב קרה פה");
+                    }*/
+            }
+
+
+            function getUserPostStat(usernames, forumid, i) {
+                var posts = "או שיש תקלה, או שיש לך עציץ, תתחדש! ";
+
+                var proxyUrl = encodeURIComponent("https://www.fxp.co.il/search.php?do=process?query=&titleonly=1&searchuser=" + usernames[i] + "&starteronly=1&tag=&forumchoice%5B%5D=" + forumid + "&childforums=1&prefixchoice%5B%5D=&replyless=0&replylimit=&searchdate=7&beforeafter=after&sortby=dateline&order=descending&showposts=1&saveprefs=1&dosearch=%D7%97%D7%A4%D7%A9&searchthreadid=0&s=&searchfromtype=vBForum%3APost&do=process&contenttypeid=1");
+
+                usernames[i] = usernames[i].replace(/ /g, '+');
+                $.ajax({
+                    url: "server.php",
+                    type: "GET",
+                    data: {
+                        thread: proxyUrl,
+                        username: usernames[i].replace(/ /g, '+'),
+                        forumid: forumid,
+                        startonly: 1,
+                        function: "statMaker"
+                    },
+                    success: function (output) {
+
+                        var html = $(output);
+
+                        html.find("#postpagestats").each(function () {
+                            var postsString = $(this).text();
+                            posts = postsString.match(/\d+(?!.*\d)/);
+                        });
+
+                        document.getElementById("statText").innerHTML += "אשכולות : " + posts + "</br><a href='https://www.fxp.co.il/search.php?search_type=1&contenttype=vBForum_Post&forumchoice[]=" + forumid + "&searchuser=" + usernames[i] + "&query=&tag=&prefixchoice[]=&childforums=0&exactname=1&replyless=0&replylimit=&searchdate=7&beforeafter=after&orde=descending&starteronly=1&showposts=0' target=_blank> קישור לבדיקה עצמית<\a></br></br>";
+
+                        wait(--i, usernames, forumid);
+                    }
+                });
+                /*
+                      req = new XMLHttpRequest();
+
+                    req.open('POST', proxyUrl, false);
+                    req.send(null);
+
+                    if(req.status == 200) {
+
+                      var html = $(req.responseText);
+                      var found;
+                      html.find("#postpagestats").each(function() {
+                       var postsString = $(this).text();
+                       posts = postsString.match(/\d+(?!.*\d)/);
+                       found=true;
+                      });
+
+                      document.getElementById("statText").innerHTML += "אשכולות : " + posts +"</br><a href='https://www.fxp.co.il/search.php?search_type=1&contenttype=vBForum_Post&forumchoice[]="+forumid+"&searchuser="+usernames[i]+"&query=&tag=&prefixchoice[]=&childforums=0&exactname=1&replyless=0&replylimit=&searchdate=7&beforeafter=after&orde=descending&starteronly=1&showposts=0' target=_blank> קישור לבדיקה עצמית<\a></br></br>";
+
+                      wait(--i , usernames , forumid);
+
+                    }
+                    else{
+                      alert("משהו לא פעל כהלכה")
+                    }*/
+
+            }
+
+        }
+
+        function checkManager() {
+            var username = document.getElementById("user-name").value;
+            var forumid = 0;
+            var forumName = document.getElementById("forum-name-manager").value;
+
+            document.getElementById("managerCheckText").innerHTML = "";
+
+            var url = "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/ajax.php?do=forumdisplayqserach&name_startsWith=" + forumName);
+
+            var req = new XMLHttpRequest();
+
+            req.open('POST', url, false);
+            req.send(null);
+
+            if (req.status == 200) {
+                //alert(req.responseText)
+                try {
+                    var obj = JSON.parse(req.responseText.replace("[", "").replace("]", ""));
+                    forumid = obj.forumid;
+                } catch (e) {
+                    // var obj = JSON.parse(req.responseText)
+                    // forumid = obj[0].forumid;
+                                if (forumName.startsWith("טיולים בארץ")) {
+                    forumid = 383
+                } 
+                            if(forumName.startsWith('עיצוב גרפי')) {
+                                    forumid = 15
+            }
+                }
+
+        
+            }
+            
+
+            
+            proxyUrl = "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/forumdisplay.php?f=" + forumid + "&daysprune=7");
+            req = new XMLHttpRequest();
+
+            req.open('GET', proxyUrl, false);
+            req.setRequestHeader("cookie",  '' );
+            req.send(null);
+
+            if (req.status == 200) {
+                var posts = "אשכולות פעילים : </br> " + "משהו לא פעל כהלכה, אנא בדוק ידנית  </br><a href='https://www.fxp.co.il/forumdisplay.php?f=" + forumid + "&daysprune=7' target=_blank>קישור</a>";
+
+
+                var html = $(req.responseText);
+                html.find("#threadpagestats").each(function () {
+                    html = $(this);
+                    var postsString = html.text();
+                    posts = "אשכולות פעילים בפורום : " + postsString.match(/\d+(?!.*\d)/);
+                    found = true;
+                });
+
+
+                document.getElementById("managerCheckText").innerHTML += posts + "</br><a href='https://www.fxp.co.il/forumdisplay.php?f=" + forumid + "&daysprune=7' target=_blank>קישור לבדיקה עצמית</a></br></br>";
+
+                getManagerStat(username, forumid);
+
+            }
+
+            function getManagerStat(username, forumid) {
+
+                var text = "";
+
+                var proxyUrl = "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/member.php?username=" + username);
+
+                var req = new XMLHttpRequest();
+
+                req.open('POST', proxyUrl, false);
+                req.send(null);
+
+                if (req.status == 200) {
+                    var html = $(req.responseText);
+
+                    html.find("#view-stats").each(function () {
+                        var html = $(this);
+                        var totalMessages = html.find(".blockrow").first().text().replace("סך הכל הודעות", "");
+
+                        text += "מונה הודעות : " + totalMessages + "</br>";
+                    });
+                }
+
+                var comments = " או שאין תוצאות או שמשהו לא פעל כהלכה, אנא חפש ידנית " + "<a href='https://www.fxp.co.il/search.php?search_type=1&contenttype=vBForum_Post&forumchoice[]=" + forumid + "&searchuser=" + username + "&query=&tag=&prefixchoice[]=&childforums=0&exactname=1&replyless=0&replylimit=&searchdate=7&beforeafter=after&orde=descending&starteronly=0&showposts=1' target=_blank>קישור<\a>";
+
+                proxyUrl = "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/search.php?do=process?query=&titleonly=1&searchuser=" + username + "&starteronly=0&tag=&forumchoice%5B%5D=" + forumid + "&childforums=1&prefixchoice%5B%5D=&replyless=0&replylimit=&searchdate=7&beforeafter=after&sortby=dateline&order=descending&showposts=1&saveprefs=1&dosearch=%D7%97%D7%A4%D7%A9&securitytoken=1574438955-85623221d3a18025fa600b9f09d9f3313b689a47&searchthreadid=0&s=&searchfromtype=vBForum%3APost&do=process&contenttypeid=1");
+
+                req = new XMLHttpRequest();
+
+                req.open('POST', proxyUrl, false);
+                req.send(null);
+
+                if (req.status == 200) {
+                    var html = $(req.responseText);
+                    html.find("#postpagestats").each(function () {
+                        var commentsString = $(this).text();
+                        comments = commentsString.match(/\d+(?!.*\d)/);
+                        text += "שבועי : " + comments + "</br>";
+                    });
+
+                    //comments = commentsString.match(/\d+(?!.*\d)/);
+                    document.getElementById("managerCheckText").innerHTML += "שם המשתמש : " + "<a href='https://www.fxp.co.il/member.php?username=" + username + "' target=_blank>" + username + "</a></br>" + "שבועי : " + comments + "</br>"
+                        + "<a href='https://www.fxp.co.il/search.php?search_type=1&contenttype=vBForum_Post&forumchoice[]=" + forumid + "&searchuser=" + username + "&query=&tag=&prefixchoice[]=&childforums=0&exactname=1&replyless=0&replylimit=&searchdate=7&beforeafter=after&orde=descending&starteronly=0&showposts=1' target=_blank>קישור לבדיקה עצמית<\a>"
+
+                    setTimeout(function () {
+
+                        var proxyUrl = "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/search.php?do=process?query=&titleonly=1&searchuser=" + username + "&starteronly=0&tag=&forumchoice%5B%5D=" + forumid + "&childforums=1&prefixchoice%5B%5D=&replyless=0&replylimit=&searchdate=14&beforeafter=after&sortby=dateline&order=descending&showposts=1&saveprefs=1&dosearch=%D7%97%D7%A4%D7%A9&securitytoken=1574438955-85623221d3a18025fa600b9f09d9f3313b689a47&searchthreadid=0&s=&searchfromtype=vBForum%3APost&do=process&contenttypeid=1");
+
+                        req = new XMLHttpRequest();
+
+                        req.open('POST', proxyUrl, false);
+                        req.send(null);
+
+                        if (req.status == 200) {
+                            var html = $(req.responseText);
+                            html.find("#postpagestats").each(function () {
+                                var commentsString = $(this).text();
+                                comments = commentsString.match(/\d+(?!.*\d)/);
+                                text += "דו-שבועי : " + comments + "</br>";
+                            });
+
+                            document.getElementById("managerCheckText").innerHTML += "</br>" + "דו-שבועי : " + comments + "</br>"
+                                + "<a href='https://www.fxp.co.il/search.php?search_type=1&contenttype=vBForum_Post&forumchoice[]=" + forumid + "&searchuser=" + username + "&query=&tag=&prefixchoice[]=&childforums=0&exactname=1&replyless=0&replylimit=&searchdate=14&beforeafter=after&orde=descending&starteronly=0&showposts=1' target=_blank>קישור לבדיקה עצמית<\a>"
+
+                            setTimeout(function () {
+
+                                var proxyUrl = "https://jsonp.afeld.me/?url=" + encodeURIComponent("https://www.fxp.co.il/search.php?do=process?query=&titleonly=1&searchuser=" + username + "&starteronly=0&tag=&forumchoice%5B%5D=" + forumid + "&childforums=1&prefixchoice%5B%5D=&replyless=0&replylimit=&searchdate=30&beforeafter=after&sortby=dateline&order=descending&showposts=1&saveprefs=1&dosearch=%D7%97%D7%A4%D7%A9&securitytoken=1574438955-85623221d3a18025fa600b9f09d9f3313b689a47&searchthreadid=0&s=&searchfromtype=vBForum%3APost&do=process&contenttypeid=1");
+
+                                req = new XMLHttpRequest();
+
+                                req.open('POST', proxyUrl, false);
+                                req.send(null);
+
+                                if (req.status == 200) {
+                                    var html = $(req.responseText);
+                                    html.find("#postpagestats").each(function () {
+                                        var commentsString = $(this).text();
+                                        comments = commentsString.match(/\d+(?!.*\d)/);
+                                        text += "חודש : " + comments + "</br>";
+                                    });
+
+                                    document.getElementById("managerCheckText").innerHTML += "</br>" + "חודשי : " + comments + "</br>"
+                                        + "<a href='https://www.fxp.co.il/search.php?search_type=1&contenttype=vBForum_Post&forumchoice[]=" + forumid + "&searchuser=" + username + "&query=&tag=&prefixchoice[]=&childforums=0&exactname=1&replyless=0&replylimit=&searchdate=30&beforeafter=after&orde=descending&starteronly=0&showposts=1' target=_blank>קישור לבדיקה עצמית<\a></br></br>" + text;
+
+                                }
+                            }, 5500);
+                        }
+                    }, 5500);
+
+
+                } else {
+                    alert("משהו לא טוב קרה פה");
+                }
+            }
+        }
+
+   
+
+        function getCategoryManagementID(category) {
+            var forums = new Map();
+
+            forums.set("דיון, עזרה וייעוץ", '198');
+            forums.set("דיון עזרה וייעוץ", '198');
+
+            forums.set("דיבורים", '979');
+            forums.set("מלב אל לב", '2952');
+
+            forums.set("פנאי ובידור", '200');
+            forums.set("לימודים והשכלה", '266');
+            forums.set("תחביבים", '633');
+            forums.set("מוזיקה", '201');//till here
+            forums.set("גרפיקה ואומנות", '202');
+            forums.set("מחשבים ואינטרנט", '199');
+            forums.set("מולטימדיה", '204');
+            forums.set("אנדרואיד", '3833');
+            forums.set("Apple", '3826');
+            forums.set("תכנות ובניית אתרים", '265'); // true that
+            forums.set("חומרה", '511');
+            forums.set("אוהדים בחול", "337");
+            forums.set('אוהדים בחו"ל', "337");
+            forums.set("אוהדים בארץ", '210');
+            forums.set("ספורט ובריאות", '203');
+            forums.set("וידאו וסרטים", '336');
+            forums.set("סדרות ישראליות", '1600');
+            forums.set("סדרות טלוויזיה", '209');
+            forums.set("משחקי פעולה", '208');
+            forums.set("משחקי תפקידים", '207');
+            forums.set("משחקי אסטרטגיה", '510');
+            forums.set("משחקים", '206');
+            forums.set("משחקי אפליקציות ודפדפן", '1547');
+            forums.set("GTA", '2028');
+            forums.set("MapleStory", '573');
+            forums.set("קונסולות", "1220");
+            forums.set("Counter-Strike", "1136");
+            forums.set("אירוחים כללי", "4428");
+            forums.set("אירוחים רפואיים", "4426");
+            forums.set("Girls and More", "4756");
+
+            if (forums.has(category)) {
+                return forums.get(category);
+            } else {
+                return "-1";
+            }
+        }
+
+
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+
+
+</body>
+</html>
